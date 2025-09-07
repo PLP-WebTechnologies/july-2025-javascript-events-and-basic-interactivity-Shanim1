@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page 🎉</h1>
+    <button id="themeToggle">Toggle Dark/Light Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1 & 2: Interactive Elements -->
+    <section class="counter-section">
+      <h2>Button Counter</h2>
+      <p>Count: <span id="countValue">0</span></p>
+      <button id="increaseBtn">Increase</button>
+      <button id="resetBtn">Reset</button>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ Section</h2>
+      <div class="faq-item">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer hidden">JavaScript is a programming language that makes web pages interactive.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What is DOM manipulation?</h3>
+        <p class="faq-answer hidden">It’s the way JavaScript changes HTML and CSS dynamically.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section class="form-section">
+      <h2>Sign Up Form</h2>
+      <form id="signupForm" novalidate>
+        <label>
+          Name: 
+          <input type="text" id="name" required/>
+          <small class="error" id="nameError"></small>
+        </label>
+        <label>
+          Email:
+          <input type="email" id="email" required/>
+          <small class="error" id="emailError"></small>
+        </label>
+        <label>
+          Password:
+          <input type="password" id="password" required/>
+          <small class="error" id="passwordError"></small>
+        </label>
+        <button type="submit">Submit</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
